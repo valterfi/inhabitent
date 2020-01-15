@@ -21,6 +21,9 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+	
+		<?php echo CFS()->get( 'Price' ); ?>
+
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
