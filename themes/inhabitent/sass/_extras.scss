@@ -1,3 +1,11 @@
+body, button, input, select, textarea {
+    color: #404040;
+    font-family: Merriweather Web,serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
 h1, h2, h3, h4, h5, h6 {
     clear: both;
     font-family: Novecento Sans Web,sans-serif;
@@ -67,3 +75,45 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3rem;
     margin-top: 0;
 }
+
+.site-footer {
+    background: url(../../images/dark-wood.png);
+    background-size: 512px 512px;
+    color: #fff;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-blocks {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.container-footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
+
+.footer-block-item {
+    margin: 3rem 0;
+    padding-right: 1.5rem;
+    width: 25%;
+}
+
+.footer-blocks p {
+    margin-bottom: .5rem;
+}
+
+.footer-blocks h3 {
+    color: #d99054;
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+}
+
+
