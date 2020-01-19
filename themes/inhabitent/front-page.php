@@ -17,6 +17,7 @@ get_header(); ?>
 			<?php $taxonomies = get_terms( 'product_taxonomy'); ?>
 		
 			<?php foreach ( $taxonomies as $term ) : ?>
+				<img src="<?php echo get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg'?>"/>	
 				<p><?php echo $term->name; ?></p>
 				<p><?php echo $term->description; ?></p>
 			<?php endforeach; ?>
