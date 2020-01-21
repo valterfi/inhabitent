@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.container {
+.container-header {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -116,4 +116,19 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
 
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1.5rem;
+	margin-bottom: 1.5rem
+}
+
+.product-grid-item {
+	border: 1px solid #e1e1e1
+}
