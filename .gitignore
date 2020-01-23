@@ -11,6 +11,7 @@ plugins/*
 !plugins/product-functionality/
 !plugins/inhabitent-blocks-master
 !plugins/business-hours/
+!plugins/my-contact-info/
 
 # Ignore everything in "themes" except the active theme. #
 themes/*

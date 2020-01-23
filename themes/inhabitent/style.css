@@ -910,6 +910,10 @@ fieldset {
   padding-right: 1.5rem;
   width: 25%; }
 
+.footer-block-item .text-logo {
+  margin-top: 1rem;
+  text-align: right; }
+
 .footer-blocks p {
   margin-bottom: .5rem; }
 
@@ -1097,6 +1101,12 @@ input[type=submit]:hover {
   background-color: #248a83;
   border: 1px solid #248a83;
   color: #fff; }
+
+.site-info {
+  font-family: Novecento Sans Web, sans-serif;
+  padding: 1.5rem 0;
+  text-align: center;
+  text-transform: uppercase; }
 
 /*!
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com

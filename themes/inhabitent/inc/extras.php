@@ -47,18 +47,20 @@ function loginpage_custom_link() {
 
 add_filter('login_headerurl','loginpage_custom_link');
 
-// function add_search_form($items, $args) {
-//     if( $args->theme_location == 'primary' ){
-//     $items .= '<li class="menu-item">'
-//             . '<form role="search" method="get" class="search-form" action="'.home_url( '/' ).'">'
-//             . '<label>'
-//             . '<span class="screen-reader-text">' . _x( 'Search for:', 'label' ) . '</span>'
-//             . '<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search …', 'placeholder' ) . '" value="' . get_search_query() . '" name="s" title="' . esc_attr_x( 'Search for:', 'label' ) . '" />'
-//             . '</label>'
-//             . '<input type="submit" class="search-submit" value="'. esc_attr_x('Search', 'submit button') .'" />'
-//             . '</form>'
-//             . '</li>';
-//     }
-//   return $items;
-// }
-
+/**
+ * Register footer widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+function red_starter_widgets_footer_init() {
+	register_sidebar( array(
+		'name'          => esc_html( 'Footer' ),
+		'id'            => 'footer-1',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="footer-block-item %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'red_starter_widgets_footer_init' );
