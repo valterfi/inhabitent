@@ -19,6 +19,8 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
+			<hr/>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
