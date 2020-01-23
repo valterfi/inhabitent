@@ -1039,7 +1039,109 @@ fieldset {
   right: 0;
   text-transform: uppercase; }
 
-/* end  */
+/* 404 */
+.error404 .entry-header {
+  line-height: 0;
+  position: relative; }
+
+.error404 .site .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.error404 .site .site-content .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%; }
+
+.error404 .site .site-content .widget-area {
+  padding-left: 5%;
+  width: 27%; }
+
+.error404 .entry-header h2 {
+  background-color: #248a83;
+  color: #fff;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  left: 0;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0;
+  margin-bottom: 1.5rem; }
+
+.error404 .entry-header a {
+  color: #fff; }
+
+.error404 .entry-meta {
+  background-color: #248a83;
+  bottom: 0;
+  color: #fff;
+  display: inline-block;
+  font-family: Novecento Sans Web,sans-serif;
+  padding: 1.00005rem 1.5rem;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase; }
+
+/* search */
+.search .entry-header {
+  line-height: 0;
+  position: relative; }
+
+.search .site .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.search .site .site-content .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%; }
+
+.search .site .site-content .widget-area {
+  padding-left: 5%;
+  width: 27%; }
+
+.search .entry-header h2 {
+  background-color: #248a83;
+  color: #fff;
+  font-size: 33.6px;
+  font-size: 2.1rem;
+  left: 0;
+  padding: .75rem 1.5rem;
+  position: absolute;
+  margin-top: 2.25rem;
+  max-width: 75%;
+  top: 0;
+  margin-bottom: 1.5rem; }
+
+.search .entry-header a {
+  color: #fff; }
+
+.search .entry-meta {
+  background-color: #248a83;
+  bottom: 0;
+  color: #fff;
+  display: inline-block;
+  font-family: Novecento Sans Web,sans-serif;
+  padding: 1.00005rem 1.5rem;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase; }
+
+/* end */
+.search-title-especific {
+  color: #248a83;
+  text-decoration: none; }
+
 .single-product_type .site-content {
   margin-left: auto;
   margin-right: auto;
