@@ -58,4 +58,8 @@
 				</div>
 			</header><!-- #masthead -->
 
+			<?php if ( !is_page( 'HomePage' ) && !is_page( 'About' ) ): ?>
+				<hr/>
+			<?php endif; ?>
+
 			<div id="content" class="site-content">

@@ -886,6 +886,27 @@ fieldset {
   font-size: 3rem;
   margin-top: 0; }
 
+.blog .entry-header {
+  line-height: 0;
+  position: relative; }
+
+.blog .site .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.blog .site .site-content .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%; }
+
+.blog .site .site-content .widget-area {
+  padding-left: 5%;
+  width: 27%; }
+
 .site-footer {
   background: url(../../images/dark-wood.png);
   background-size: 512px 512px;
@@ -1107,6 +1128,11 @@ input[type=submit]:hover {
   padding: 1.5rem 0;
   text-align: center;
   text-transform: uppercase; }
+
+.widget ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0; }
 
 /*!
  * Font Awesome Free 5.12.0 by @fontawesome - https://fontawesome.com
