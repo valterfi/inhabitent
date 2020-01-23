@@ -46,3 +46,27 @@ function loginpage_custom_link() {
 }
 
 add_filter('login_headerurl','loginpage_custom_link');
+
+// function add_search_form($items, $args) {
+//     if( $args->theme_location == 'primary' ){
+//     $items .= '<li class="menu-item">'
+//             . '<form role="search" method="get" class="search-form" action="'.home_url( '/' ).'">'
+//             . '<label>'
+//             . '<span class="screen-reader-text">' . _x( 'Search for:', 'label' ) . '</span>'
+//             . '<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Search …', 'placeholder' ) . '" value="' . get_search_query() . '" name="s" title="' . esc_attr_x( 'Search for:', 'label' ) . '" />'
+//             . '</label>'
+//             . '<input type="submit" class="search-submit" value="'. esc_attr_x('Search', 'submit button') .'" />'
+//             . '</form>'
+//             . '</li>';
+//     }
+//   return $items;
+// }
+
+function add_search_form($items, $args) {
+    if( $args->theme_location == 'primary' )
+    $items .= '<li class="search"><form role="search" method="get" id="searchform" action="'.home_url( '/' ).'"><input type="text" value="search" name="s" id="s" /><input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" /></form></li>';
+return $items;
+}
+
+add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
+
