@@ -374,6 +374,32 @@ fieldset {
     margin: 0 0 4.5rem;
 }
 
+.post-type-archive-product_type .page-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.tax-product_taxonomy .page-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.product-type-list {
+	display: flex;
+	font-family: Novecento Sans Web, sans-serif;
+	font-size: 19.2px;
+	font-size: 1.2rem;
+	justify-content: center;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-transform: uppercase
+}
+
+.product-type-list li {
+	margin: 0 1.5rem
+}
+
 .template-page-about p {
     margin-left: auto;
     margin-right: auto;

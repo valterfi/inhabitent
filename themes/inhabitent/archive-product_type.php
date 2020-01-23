@@ -14,13 +14,23 @@ get_header(); ?>
 
 		<?php if ( $wpb_all_query->have_posts() ) : ?>
 
+
 			<header class="page-header">
-				<!-- <?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?> -->
-				<h1>SHOP STUFF</h1>
-			</header><!-- .page-header -->
+				<h1 class="page-title">Shop Stuff</h1>
+				<ul class="product-type-list">
+
+					<?php $taxonomies = get_terms( 'product_taxonomy'); ?>
+				
+					<?php foreach ( $taxonomies as $term ) : ?>
+						<li>
+							<p><a href="<?php echo get_term_link($term)  ?>"><?php echo $term->name; ?></a></p>
+						</li>
+					<?php endforeach; ?>
+
+				</ul>
+			</header>
+
+			<hr/>
 
 			<?php /* Start the Loop */ ?>
 			<div class="container">

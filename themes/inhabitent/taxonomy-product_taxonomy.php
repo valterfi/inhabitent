@@ -7,20 +7,23 @@
 
 get_header(); ?>
 
-<hr/>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if (have_posts() ) : ?>
 
 			<header class="page-header">
-				<!-- <?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?> -->
-				<h1>SHOP STUFF</h1>
-			</header><!-- .page-header -->
+
+			<?php
+				$taxonomy = get_queried_object();
+			?>
+				<h1 class="page-title"><?php echo $taxonomy->name;?></h1>
+				<div class="taxonomy-description">
+					<p><?php echo $taxonomy->description;?></p>
+				</div>
+			</header>
+
+			<hr/>
 
 			<?php /* Start the Loop */ ?>
 			<div class="container">
