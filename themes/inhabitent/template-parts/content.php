@@ -9,20 +9,20 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
+		<img width="1500" height="1026" src="<?php the_post_thumbnail_url( 'large' ); ?>" class="attachment-large size-large wp-post-image" sizes="(max-width: 1500px) 100vw, 1500px">
+		<h2 class="entry-title"><a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">Van Camping Photo Contest</a></h2>
 		<div class="entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
 		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+		<!-- .entry-meta -->
+	</header>
+	<!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		<p><a href="<?php echo esc_url( get_permalink() ) ?>" class="read-more black-btn">Read more →</a></p>
 	</div><!-- .entry-content -->
-</article><!-- #post-## -->
+	<!-- .entry-content -->
+</article>
+
+
