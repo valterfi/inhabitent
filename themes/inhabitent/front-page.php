@@ -48,7 +48,7 @@ get_header(); ?>
 								</div>
 								<div class="post-info-wrapper">
 									<span class="entry-meta"><span class="posted-on"><?php the_date() ?></span> / <?php comments_number() ?></span>
-									<h3 class="entry-title"><a href="https://tent.academy.red/van-camping-photo-contest/" rel="bookmark"><?php the_title(); ?></a></h3>
+									<h3 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 								</div>
 								<a class="black-btn" href="<?php the_permalink() ?>">Read Entry</a>
 							</li>
