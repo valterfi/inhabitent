@@ -8,34 +8,24 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<img width="1500" height="1026" src="<?php the_post_thumbnail_url( 'large' ); ?>" class="attachment-large size-large wp-post-image" sizes="(max-width: 1500px) 100vw, 1500px">
-		<h2 class="entry-title"><a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">Van Camping Photo Contest</a></h2>
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-		<!-- .entry-meta -->
-	</header>
-	<!-- .entry-header -->
+    <div class="product-image-wrapper">
+		<img width="640" height="480" src="<?php echo CFS()->get( 'image' ); ?>" class="attachment-large size-large wp-post-image" sizes="(max-width: 640px) 100vw, 640px"> 
+	</div>
 
-	<div class="entry-content">
-	
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+    <div class="product-content-wrapper">
+        <header class="entry-header">
+            <h1 class="entry-title"><?php the_title(); ?></h1> </header>
+        <!-- .entry-header -->
 
-	<footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+        <div class="entry-content">
+            <p class="price">$155.00</p>
 
-	<br/>
+            <p><?php the_content();?></p>
 
-	<?php
-		get_template_part( 'template-parts/social-buttons' );
-	?>
-</article><!-- #post-## -->
+            <?php
+				get_template_part( 'template-parts/social-buttons' );
+			?>
+        </div>
+        <!-- .entry-content -->
+    </div>
+</article>

@@ -288,6 +288,42 @@ fieldset {
     position: relative;
 }
 
+.single-product_type .site-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
+
+.single-product_type .hentry {
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.single-product_type .hentry .product-image-wrapper {
+    width: 300%;
+}
+
+.single-product_type .hentry .product-content-wrapper {
+    width: 200%;
+}
+
+.single-product_type .hentry .entry-title {
+    color: #d99054;
+}
+
+.single-product_type .hentry .price {
+    font-family: Novecento Sans Web,sans-serif;
+    font-size: 28.8px;
+    font-size: 1.8rem;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.hentry {
+    margin: 0 0 4.5rem;
+}
+
 .archive .site .site-content {
 	display: flex;
     margin-left: auto;
