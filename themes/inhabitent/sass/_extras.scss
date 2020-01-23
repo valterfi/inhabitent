@@ -95,21 +95,6 @@ fieldset {
 	padding: 0
 }
 
-.header-search label {
-	display: none;
-	float: left;
-	margin: 0
-}
-
-.header-search input[type=search] {
-	border: 0;
-	background: transparent;
-	font-family: Novecento Sans Web, sans-serif;
-	margin-left: .75rem;
-	padding: 0 .3rem;
-	text-transform: uppercase
-}
-
 .header-search input[type=search]:focus {
 	outline: none
 }
@@ -124,8 +109,27 @@ fieldset {
 	text-transform: uppercase
 }
 
-.header-search input[type=search]:focus {
-	outline: none
+.header-search .label-green input[type=search] {
+    color: #248a83;
+	//color: #fff;
+	border: 0;
+	background: transparent;
+	font-family: Novecento Sans Web, sans-serif;
+	margin-left: .75rem;
+	padding: 0 .3rem;
+	text-transform: uppercase
+}
+
+.search-input-show {
+    display: block;
+    float: left;
+	margin: 0
+}
+
+.search-input-hide {
+    display: none;
+	float: left;
+	margin: 0
 }
 
 .site-header {
@@ -621,6 +625,14 @@ fieldset {
 	top: 50%;
 	transform: translate(-50%, -52%);
 	width: auto
+}
+
+.home h2 {
+    font-size: 38.4px;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.75rem;
+    text-align: center;
 }
 
 .home .product-type-blocks {

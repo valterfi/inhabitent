@@ -22,8 +22,8 @@
 
 					<div class="footer-block-item">
 						<div class="text-logo">
-							<a href="https://tent.academy.red/" rel="home">
-								<img src="https://tent.academy.red/wp-content/themes/inhabitent/images/inhabitent-logo-text.svg" alt="Inhabitent logo">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+								<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg'?>" alt="Inhabitent logo">
 							</a>
 						</div>
 					</div>
