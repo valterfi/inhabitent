@@ -450,6 +450,61 @@ fieldset {
     text-transform: uppercase;
 }
 
+/* archive  */
+
+.archive .entry-header {
+	line-height: 0;
+    position: relative;
+}
+
+.archive .site .site-content {
+	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
+}
+
+.archive .site .site-content .content-area {
+	border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+    width: 73%;
+}
+
+.archive .site .site-content .widget-area  {
+	padding-left: 5%;
+    width: 27%;
+}
+
+.archive .entry-header h2 {
+	background-color: #248a83;
+    color: #fff;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+	top: 0;
+	margin-bottom: 1.5rem;
+}
+
+.archive .entry-header a {
+	color: #fff;
+}
+
+.archive .entry-meta {
+	background-color: #248a83;
+    bottom: 0;
+    color: #fff;
+    display: inline-block;
+    font-family: Novecento Sans Web,sans-serif;
+    padding: 1.00005rem 1.5rem;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+}
+
 /* end */
 
 .search-title-especific {
