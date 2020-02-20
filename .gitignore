@@ -12,8 +12,6 @@ plugins/*
 !plugins/inhabitent-blocks-master
 !plugins/business-hours/
 !plugins/my-contact-info/
-!plugins/contact-form-7/
-!plugins/custom-field-suite/
 
 # Ignore everything in "themes" except the active theme. #
 themes/*
