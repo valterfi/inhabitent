@@ -2,6 +2,8 @@
 
 - Implementation of a theme for wordpress using php, html, css and javascript.
 
+![](themes/inhabitent/inhabitent-screenshot.png)
+
 # Development approach
 
 - First it was to make all the content of the site available in the wordpress templates in its correct location. The entire registration was done using the wordpress management interface.
